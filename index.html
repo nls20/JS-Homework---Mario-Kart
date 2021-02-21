@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>Welcome to Mario Kart!</header>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="character" class="primary">CHARACTER</label>
+                <select id="character">
+                    <option value="" disabled selected></option>
+                    <option value="Mario">Mario</option>
+                    <option value="Princess">Princess</option>
+                    <option value="Bowser">Bowser</option>
+                    <option value="Yoshi">Yoshi</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="kart" class="primary">KART</label>
+                <select id="kart">
+                    <option value="" disabled selected></option>
+                    <option value="Flame Runner">Flame Runner</option>
+                    <option value="Mach Bike">Mach Bike</option>
+                    <option value="Blue Falcon">Blue Falcon</option>
+                    <option value="Bullet Bike">Bullet Bike</option>
+                </select>
+            </div>
+        
+            <div class="form-item">
+                <label for="gameChoice" class="primary">GAME CHOICE</label>
+                <select id="gameChoice">
+                    <option value="" disabled selected></option>
+                    <option value="Koopa Troopa Beach">Koopa Troopa Beach</option>
+                    <option value="Rainbow Road">Rainbow Road</option>
+                    <option value="Choco Mountain">Choco Mountain</option>
+                    <option value="Frappe Snowland">Frappe Snowland</option>
+                </select>
+            </div>
+
+            <div class="input-item">
+                <label for="difficulty" class="primary">DIFFICULTY</label>
+                <input type="radio" id="Hard" name="difficulty" value="Hard">Hard<br>
+                <input type="radio" id="Medium" name="difficulty" value="Medium">Medium<br>
+                <input type="radio" id="Easy" name="difficulty" value="Easy">Easy<br>
+            </div>
+        </div> 
+        </div>
+
+    <div class="new-wrapper">
+        <input id="new-item-form" type="submit" value="SAVE"/>
+        </div>
+    </form>
+    <div class="wrapper">
+    <button id="delete-all">DELETE ALL</button>
+    </div>
+
+    <h1>SELECTED GAME</h1>
+    <div class="selected-game">
+    <ul id="game-list"></ul> 
+  </body>
+</html>
